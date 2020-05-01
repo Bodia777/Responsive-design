@@ -1,0 +1,86 @@
+#dropdownMenuButton {
+    visibility: hidden;
+    position: relative;
+}
+
+#header .menu {
+    position: relative;
+    z-index: 5;
+}
+
+#dropDownMenu {
+    width: 1125px;
+    height: 661px;
+    padding: 85px 15px 53px 80px;
+    background-color: rgba(38, 38, 38, 0.65);
+    border: 1px solid rgba(32, 32, 32, 0.65);
+    position: absolute;
+    z-index: 3;
+    transform: translate3d(-1039px, 42px, 0px);
+    transition-property: all;
+    transition-duration: .7s;
+}
+
+#dropDownMenu .menuImage {
+    height: 536px;
+    position: absolute;
+    top: 78px;
+    left: 73px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.65);
+}
+
+#dropDownMenu .menuImage>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#dropDownMenu .links {
+    position: relative;
+    padding-left: 60px;
+    z-index: 8;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    font-family: tinos;
+    font-size: 24px;
+    letter-spacing: 1pt;
+    color: rgb(144, 144, 144);
+    margin-bottom: 20px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+.dropdown-item:hover {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    background-color: transparent;
+}
+
+.activated {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+    #dropDownMenu .links {
+        background-color: rgba(30, 25, 25, 0.35);
+        height:70vh;
+    }
+    #dropDownMenu .dropdown-item {
+        text-align: right;
+        color: rgb(17, 17, 17);
+    }
+    #dropDownMenu .menuImage{
+        width: 100%;
+    }
+    #dropDownMenu .menuImage>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+

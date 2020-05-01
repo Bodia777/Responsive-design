@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="imageSection">
+            <div class="blure"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-1 offset-10 offset-sm-11">
+                    <div class="dropdown">
+                        <label for="dropdownMenuButton" class="menu" onclick="togleDropDownMenu()">
+                            <svg width="60" height="32" viewBox="0 0 60 32">
+                                <image id="button" data-name="Кнопка меню" width="60" height="32"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAgCAQAAADk4dMZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkAw0AEjXajOXJAAAAnUlEQVRIx+2XwQ3DIAxFv6MsAcPkzhx0rc6Re3cBugU95FYcFaU/5BA/bhbyQ7aEZan4pgABTzhwKIhY22SiijNNuyX0bbqJKNhDtKAufuBN0yZE9TVqqel09XgMI3psYhOb+GxxQEYdfDKCVO4k6qVcVWqZqJOol4RoQ8LEJjbxYeZfF15/CpaduPpzFfLu5NZeMXl3cr4N3m93+gCG1Fv+dzq49QAAAABJRU5ErkJggg==" />
+                            </svg>
+                        </label>
+                        <input id="dropdownMenuButton" type="button" class="btn btn-secondary dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <div id="dropDownMenu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-7 menuImage">
+                                        <img src="assets/img/menu1.jpg" alt="">
+                                    </div>
+                                    <div class="offset-lg-6 col-lg-6 col-md-4 offset-md-7  links"
+                                        onmouseleave="ruturnMenuImageToActivePage()">
+                                        <div class="row">
+                                            <a class="dropdown-item col-12 activated" onmouseenter="changePhotoMenu(1)"
+                                                href="#" onclick="setNewActivePage(1)"> Головна</a>
+                                        </div>
+                                        <div class="row">
+                                            <a class="dropdown-item col-12" onmouseenter="changePhotoMenu(2)"
+                                                onclick="setNewActivePage(2)" href="#"> Дизайн інтер'єру</a>
+                                        </div>
+                                        <div class="row" onmous>
+                                            <a class="dropdown-item col-12" onmouseenter="changePhotoMenu(3)"
+                                                onclick="setNewActivePage(3)" href="#"> Комерційний дизайн</a>
+                                        </div>
+                                        <div class="row">
+                                            <a class="dropdown-item col-12" onmouseenter="changePhotoMenu(4)"
+                                                onclick="setNewActivePage(4)" href="#"> Архітектурне проектування</a>
+                                        </div>
+                                        <div class="row">
+                                            <a class="dropdown-item col-12" onmouseenter="changePhotoMenu(5)"
+                                                onclick="setNewActivePage(5)" href="#"> Наші роботи</a>
+                                        </div>
+                                        <div class="row"></div>
+                                        <a class="dropdown-item col-12" onmouseenter="changePhotoMenu(2)"
+                                            onclick="setNewActivePage(2)" href="#"> Контакти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Lorem ipsum</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="textWrapperDown col-md-8">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, set do</h2>
+                </div>
+            </div>
+            <div class="row social_icon_margin">
+                <div class="col-1 offset-10">
+                    <a href="https://www.instagram.com/?hl=uk" target="blank" class="social_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150pt"
+                            height="150pt" viewBox="0 0 150 150" version="1.1">
+                            <g id="surface23770738">
+                                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                    d="M 48 9 C 26.496094 9 9 26.496094 9 48 L 9 102 C 9 123.503906 26.496094 141 48 141 L 102 141 C 123.503906 141 141 123.503906 141 102 L 141 48 C 141 26.496094 123.503906 9 102 9 Z M 48 15 L 102 15 C 120.257812 15 135 29.742188 135 48 L 135 102 C 135 120.257812 120.257812 135 102 135 L 48 135 C 29.742188 135 15 120.257812 15 102 L 15 48 C 15 29.742188 29.742188 15 48 15 Z M 111 33 C 107.6875 33 105 35.6875 105 39 C 105 42.3125 107.6875 45 111 45 C 114.3125 45 117 42.3125 117 39 C 117 35.6875 114.3125 33 111 33 Z M 75 42 C 56.808594 42 42 56.808594 42 75 C 42 93.191406 56.808594 108 75 108 C 93.191406 108 108 93.191406 108 75 C 108 56.808594 93.191406 42 75 42 Z M 75 48 C 89.945312 48 102 60.054688 102 75 C 102 89.945312 89.945312 102 75 102 C 60.054688 102 48 89.945312 48 75 C 48 60.054688 60.054688 48 75 48 Z M 75 48 " />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-1 offset-10 offset-sm-0">
+                    <a href="https://www.facebook.com/" class="social_icon" target="blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150pt"
+                            height="150pt" viewBox="0 0 150 150" version="1.1">
+                            <g id="surface23156170">
+                                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                    d="M 75 9 C 38.585938 9 9 38.585938 9 75 C 9 108.058594 33.382812 135.414062 65.140625 140.183594 L 68.582031 140.707031 L 68.582031 88.699219 L 52.992188 88.699219 L 52.992188 78.140625 L 68.582031 78.140625 L 68.582031 64.117188 C 68.582031 55.484375 70.65625 49.796875 74.085938 46.230469 C 77.515625 42.664062 82.585938 40.863281 89.636719 40.863281 C 95.277344 40.863281 97.46875 41.203125 99.554688 41.460938 L 99.554688 50.101562 L 92.214844 50.101562 C 88.050781 50.101562 84.632812 52.425781 82.855469 55.523438 C 81.082031 58.621094 80.53125 62.316406 80.53125 66.082031 L 80.53125 78.132812 L 98.898438 78.132812 L 97.265625 88.695312 L 80.53125 88.695312 L 80.53125 140.789062 L 83.933594 140.324219 C 116.144531 135.957031 141 108.378906 141 75 C 141 38.585938 111.414062 9 75 9 Z M 75 15 C 108.171875 15 135 41.828125 135 75 C 135 104.1875 114.105469 128.195312 86.53125 133.597656 L 86.53125 94.691406 L 102.410156 94.691406 L 105.894531 72.132812 L 86.53125 72.132812 L 86.53125 66.082031 C 86.53125 62.96875 87.101562 60.179688 88.058594 58.503906 C 89.019531 56.832031 89.945312 56.101562 92.214844 56.101562 L 105.554688 56.101562 L 105.554688 36.027344 L 102.953125 35.675781 C 101.15625 35.433594 97.046875 34.863281 89.636719 34.863281 C 81.527344 34.863281 74.566406 37.074219 69.761719 42.070312 C 64.957031 47.066406 62.582031 54.511719 62.582031 64.117188 L 62.582031 72.140625 L 46.992188 72.140625 L 46.992188 94.699219 L 62.582031 94.699219 L 62.582031 133.410156 C 35.449219 127.664062 15 103.875 15 75 C 15 41.828125 41.828125 15 75 15 Z M 75 15 " />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="mainBackground"></div>
+        <div class="container wrapper">
+            <section>
+                <div class="row titleTop">
+                    <div class="backgroundImagePicture"></div>
+                    <div class="offset-lg-2 col-lg-2 offset-md-2 col-md-6 col-sm-12 offset-sm-0">
+                        <h2 class="title">Наша ціль</h2>
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class="offset-lg-2 col-lg-10 offset-md-2 col-md-10 offset-sm-1 col-sm-8 underlineWrapper">
+                    <div class="underline1"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-lg-2 col-lg-7 offset-md-2 col-md-8 col-sm-12 offset-sm-0 wrapperForText">
+                    <p class="firstText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+                        perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+                        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+            </div>
+            <section class="architecture">
+                <div class="row">
+                    <div class="col-lg-9 offset-lg-0 col-md-8 offset-md-2">
+                        <h2 class=" title archTitle">Архітектурне проектування</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 underlineWrapper">
+                        <div class="underline1"> </div>
+                    </div>
+                </div>
+                <div class="row relativeBox">
+                    <div class="backgroundLetterA"></div>
+                    <div
+                        class="col-lg-4 offset-lg-2 col-md-12 offset-md-0 col-sm-9 offset-sm-2   underLetterTextWrapper">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                            quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                            dolore magnam aliquam quaerat
+                            voluptatem.</p>
+                    </div>
+                    <div class="wrapperForImg col-lg-6 col-sm-12"><img class="biggerPicture"
+                            src="assets/img/flatProject.jpg" alt=""></div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12 greyBlock">
+                        <h4>Lorem Ipsum</h4>
+                        <div class="boxForText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt
+                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                veritatis
+                                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit
+                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi
+                                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                adipisci
+                                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                aliquam quaerat
+                                voluptatem.<p>
+                        </div>
+                        <div>
+                            <p class="small">про проект</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 offset-md-0 col-sm-12">
+                        <div class="wrapForSmallImg paddingRight"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="interior">
+                <div class="row">
+                    <h2 class="offset-lg-4 col-lg-8 offset-md-2 col-md-8 col-sm-10  title">Інтер'єр та екстер'єр</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-6 col-md-8 offset-md-2 underlineWrapper">
+                        <div class="underline1"></div>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row-md-reverse flex-row-sm-reverse">
+                    <div
+                        class="wrapperForImg col-lg-6 col-md-12 offset-md-0 order-md-2 p-12 col-sm-12 offset-sm-0 order-sm-2 p-12">
+                        <img class="biggerPicture" src="assets/img/room.jpg" alt="">
+                    </div>
+                    <div
+                        class="col-lg-4 order-lg-2 col-md-12 order-md-1 p-12 col-sm-12 offset-sm-0 order-sm-1 p-12 underLetterTextWrapper">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                            quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                            dolore magnam
+                            aliquam quaerat voluptatem.</p>
+                    </div>
+                    <div class="backgroundLetterI"></div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12 greyBlock">
+                        <h4>Lorem Ipsum</h4>
+                        <div class="boxForText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt
+                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                veritatis
+                                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit
+                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi
+                                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                adipisci
+                                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                aliquam quaerat
+                                voluptatem.<p>
+                        </div>
+                        <div>
+                            <p class="small">про проект</p>
+                        </div>
+                    </div>
+                    <div class="wrapForSmallImg col-lg-5 col-md-6 col-sm-12 tower">
+                    </div>
+                </div>
+            </section>
+            <section class="architecture landskape">
+                <div class="row ">
+                    <h2 class="offset-lg-2 col-lg-9 offset-md-2 col-md-8 title archTitle ">Ландшафт</h2>
+                </div>
+                <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 underlineWrapper">
+                    <div class="underline1"> </div>
+                </div>
+                <div class="row relativeBox">
+                    <div class="backgroundLetterLUkr"></div>
+                    <div class="offset-lg-2 col-lg-4 col-md-12 ofset-md-0 text underLetterTextWrapper">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
+                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                        dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                        labore et dolore magnam
+                        aliquam quaerat voluptatem.</div>
+                    <div class="wrapperForImg col-lg-6 col-sm-12">
+                        <img class="landscapeImg" src="assets/img/park.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12 greyBlock mrn-tp">
+                        <h4>Lorem Ipsum</h4>
+                        <div class="boxForText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt
+                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                veritatis
+                                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit
+                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi
+                                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                adipisci
+                                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                                aliquam quaerat
+                                voluptatem.<p>
+                        </div>
+                        <div>
+                            <p class="small">про проект</p>
+                        </div>
+                    </div>
+                    <div class="wrapForSmallImg col-lg-5 col-md-6 col-sm-12 cottageImg"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="greycolor"></div>
+        <div class="darkcolor"></div>
+        <div class="container">
+            <div class="row greyColorRow">
+                <div class="footerText col-lg-5 col-md-5 col-sm-12">
+                    <div class="row">
+                        <h2>О нас</h2>
+                    </div>
+                    <div class="row footerText">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+                            ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                            dolore magnam aliquam quaerat voluptatem. </p>
+                    </div>
+                </div>
+                <div class="footerForm offset-1 col-lg-6 col-md-6 ofsset-sm-0 col-sm-12">
+                    <div class="row footerFormTitle">
+                        <h2>Связаться с нами</h2>
+                    </div>
+                    <div class="row">
+                        <svg width="36" height="36" viewBox="0 0 36 36">
+                            <image id="icons8-телефон-100" width="36" height="36"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkAw0PJAruqh68AAACIklEQVRIx6XVXWiOYRzH8f/G04ixkbYShRpFa+XlxGRMWTlQcqDUNA68nOxgDhyIzMvKAeLEEU4cSDmgrJGXFI3FllIc2HAmL0neRvNxIPeeZ8963vz/J/fvd119u+7r+t33FSLp+S66Z1OaU0SPPjb77m8t+R9QG1ilDq9LB3XgpblCaEdXaaBdeKgiMR+hvnhQM14oSzNrMVg86AHmjbHbcbhYUC9SWQP9qCsGVB69EbE0xtbGGIkrUR4FV3n0RERLlv8mbsTimFw4qMyk+BhfY1bWyLv4HbWhYJLQhcYx73wUm4vNUTUGMuwZeF5Kss9iXWJO1FPsmf0DVRjxITEn41spn0gI23AmsVtxqTRQuIM1iTpdbLZHH6v8Mmxaom9hZymg0ITHiZrgCdpKAYV9OJe26UPYUgooXEBnoqZ7Xeiqsq272JOomQaxa8ycykJAEzzF9kRP0Y9jiW4zhAEN+UBhqiFsTXSZblyW0qAPw66CA/lAocpgxqrCCfwAnVLCQo/wzPLcoFBtCLvTnFY/XTMnzdkLDuYGhUoDOJLmVGTNWeQ+XliWCxTK3c7I1fjdARrz5eM8HqrJOWcBrueP2n4Ma8kxYwVOFBL/9UZwcpxLK4TZRnxWVQgo1OjGWxuyRlJeYWXuzc7sHaAvA5bSh9bcx5/dM5wC7x2yVqV6z9GRL0fj9xxdPhmt5NdXVvgNmNTUWB1N0Rhf4njc/Gf+AQFKLLFHar4RAAAAAElFTkSuQmCC" />
+                        </svg>
+                        <a href="tel:+78142332211" target="blank">+(380)-73-777-7777</a></div>
+                    <div class="row">
+                        <svg width="36" height="36" viewBox="0 0 150 150">
+                            <g id="surface23994024">
+                                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                                    d="M 16.5 21 C 9.09375 21 3.035156 27.046875 3 34.453125 C 3 34.453125 3 34.464844 3 34.476562 C 3 34.488281 3 34.488281 3 34.5 L 3 115.5 C 3 122.917969 9.082031 129 16.5 129 L 133.5 129 C 140.917969 129 147 122.917969 147 115.5 L 147 34.5 C 147 34.488281 147 34.488281 147 34.476562 C 147 34.464844 147 34.453125 147 34.453125 C 146.964844 27.046875 140.90625 21 133.5 21 Z M 24.304688 27 L 125.707031 27 L 75 62.34375 Z M 14.320312 27.351562 L 75 69.65625 L 135.691406 27.351562 C 138.761719 28.277344 140.976562 31.066406 141 34.464844 C 140.988281 35.097656 140.34375 36.363281 139.40625 37.382812 C 138.457031 38.414062 137.53125 39.058594 137.53125 39.058594 L 137.519531 39.082031 L 75 83.332031 L 12.480469 39.082031 L 12.46875 39.058594 C 12.46875 39.058594 11.542969 38.414062 10.59375 37.382812 C 9.65625 36.363281 9.011719 35.097656 9 34.464844 C 9.023438 31.066406 11.238281 28.277344 14.320312 27.351562 Z M 9 43.957031 L 9.023438 43.980469 L 9.046875 43.992188 L 9.046875 44.003906 L 18 50.332031 L 18 123 L 16.5 123 C 12.328125 123 9 119.671875 9 115.5 Z M 141 43.957031 L 141 115.5 C 141 119.671875 137.671875 123 133.5 123 L 132 123 L 132 50.332031 L 140.953125 44.003906 L 140.953125 43.992188 Z M 24 54.574219 L 75 90.667969 L 126 54.574219 L 126 123 L 24 123 Z M 24 54.574219 " />
+                            </g>
+                        </svg>
+                        <a href="mailto:qwerty@ukr.net">qwerty@ukr.net</a></div>
+                    <div class="row">
+                        <p class="regularFont">Узнать стоимость проекта</p>
+                    </div>
+                    <form action="" class="row">
+                        <input type="text" class="col-5" placeholder="Имя*" required></input>
+                        <input type="text" class="col-6 offset-1" placeholder="Номер телефона*" required
+                            pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$"></input>
+                        <small class="offset-6 col-6">*цифри, +, -, ()</small>
+                        <label for="select" class="labelForSelect offset-0 col-12">
+                            <select name="" id="select" class="offset-0 col-12" required>
+                                <option value="0" selected disabled>Виберете услугу*</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                                <svg class="selectArrow" width="22" height="12" viewBox="0 0 22 12">
+                                <image id="icons8-развернуть-100" width="22" height="12"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAQAAADM8IVNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkAw0PJC1LoKvXAAAAdElEQVQoz43Pyw3CQAwFwBE9IKpgQwMpEQRZCKXAOT3lbE6BKB82vvlpZPnxUtsytfdOr3Mq0qTTw1UUeBKaYWmE6i+9j4O8ypPwmIZZSDN6FNqlG3O+Sgf+q7r4wHhuX15Na63xg72QSxTOQrhsodB6LsUfO8kl2IhaaDAAAAAASUVORK5CYII=" />
+                            </svg>
+                        </label>
+                        <input type="submit" value="Получить просчет" class="offset-3 col-6">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 copyRight">©</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+
+
+    <script src="js/menuDesign.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: tinos;
+    src: url("../assets/fonts/Tinos-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: tinosBold;
+    src: url("../assets/fonts/Tinos-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: khulaSemibold;
+    src: url("../assets/fonts/Khula-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: khulaRegular;
+    src: url("../assets/fonts/Khula-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: tinos;
+}
+
+#header {
+    width: 100%;
+    height: 1080px;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+#header .imageSection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1080px;
+    width: calc(100% - 470px);
+    background-image: url("../assets/img/mainPageHeader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 470px;
+}
+
+#header .blure {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#header .menu {
+    margin-top: 70px;
+}
+
+#header h1 {
+    font-family: khulaSemibold;
+    font-size: 72px;
+    color: rgb(230, 230, 230);
+    letter-spacing: 4pt;
+    margin-top: 408px;
+    margin-bottom: 20px;
+}
+
+#header .textWrapperDown {
+    border-top: 1px solid #fff;
+    width: 742px;
+    overflow: hidden;
+}
+
+#header .textWrapperDown h2 {
+    margin-top: 36px;
+    font-family: khulaRegular;
+    font-size: 36px;
+    color: rgb(230, 230, 230);
+    letter-spacing: 4pt;
+}
+
+#header .social_icon_margin {
+    margin: 150px 10px 5px;
+}
+
+#header .social_icon_margin svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 1025px) {
+    #header h1 {
+        font-size: 42px;
+    }
+
+    #header .textWrapperDown {
+        margin-top: 33px;
+        width: 395px;
+        height: 53px;
+    }
+
+    #header .textWrapperDown h2 {
+        font-family: khulaRegular;
+        font-size: 19px;
+        color: rgb(230, 230, 230);
+        letter-spacing: .8px;
+    }
+}
+
+
+@media screen and (max-width: 668px) {
+    #header .imageSection {
+        margin-left: 235px;
+    }
+
+    #header h1 {
+        font-family: khulaSemibold;
+        font-size: 30px;
+        color: rgb(230, 230, 230);
+        letter-spacing: 0.8px;
+    }
+
+    #header .textWrapperDown {
+        margin-top: 17px;
+        width: 338px;
+        height: 53px;
+    }
+
+    #header .textWrapperDown h2 {
+        font-family: khulaRegular;
+        font-size: 19px;
+        color: rgb(230, 230, 230);
+        letter-spacing: 0.8px;
+    }
+    #button{
+        width: 42px;
+        height: 42px;
+    }
+}
+
+
+

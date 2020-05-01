@@ -1,0 +1,310 @@
+#main .mainBackground {
+    background-color: rgb(246, 246, 246);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+
+#main .wrapper {
+    background-size: 100% 100%;
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 46px;
+}
+#main .titleTop {
+    position: relative;
+    z-index: 1;
+}
+
+#main .title {
+    font-size: 48px;
+    font-family: tinosBold;
+    letter-spacing: 4pt;
+    position: relative;
+    z-index: 1;
+}
+#main .backgroundImagePicture {
+    position: absolute;
+    width: 317px;
+    height: 354px;
+    background-image: url("../assets/img/background/changedPicture.png");
+    left: -2.227vw;
+    top: -15px;
+    z-index: 0;
+}
+#main .underlineWrapper{
+height: 37px;
+padding: 0 15px;
+}
+#main .underline1 {
+    height: 37px;
+    border-bottom: 1px solid black;
+}
+#main .wrapperForText{
+    margin-top: 22px;
+    overflow: hidden;
+    height: 78px;
+    margin-bottom: 129px;
+}
+#main .text, #main .firstText {
+    line-height: 34px;
+    font-family: tinos;
+    font-size: 30px;
+    padding: 8px;
+    letter-spacing: 3pt;
+}
+
+#main .archTitle {
+    margin-top: -43px;
+}
+#main .relativeBox {
+    position: relative;
+}
+.backgroundLetterA {
+    width: 213px;
+    height: 198px;
+    background-image: url("../assets/img/background/A.png");
+    position: absolute;
+    left: -3.625vw;
+    top: 25px;
+}
+#main .wrapperForImg{
+    height: 419px; 
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+#main .biggerPicture {
+    margin-top: -10px;
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+}
+#main .greyBlock {
+    background-color: rgb(255, 255, 255);
+    padding: 32px;
+    height: 347px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    border: 1px solid rgb(193, 193, 193);
+}
+#main .greyBlock:hover {
+    background-color: rgb(180, 180, 180);
+}
+#main .greyBlock>h4 {
+    font-family: tinosBold;
+    font-size: 24px;
+    margin-bottom: 12px;
+    letter-spacing: 4pt;
+}
+#main .boxForText{
+    margin: 24px 0 47px;
+    height: 173.11px;
+    overflow: hidden;
+    position: relative;
+}
+#main .small{
+    font-size: 18px;
+    position: absolute;
+    bottom: 1px;
+    left: 53px;
+    letter-spacing: 4pt;
+}
+#main .boxForText>p{
+    font-size: 24px;
+    letter-spacing: 3pt;
+    font-family: tinos;
+    line-height: 30px;
+}
+#main .greyBlock>div:last-child::before {
+    content: "— ";
+}
+#main .wrapForSmallImg{
+    height: 347px;
+    background-image: url("../assets/img/planFlat.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 115px;
+    margin-left: 35px;
+}
+#main .paddingRight{
+    background-size: 91.667% 100%;
+}
+#main .interior {
+    position: relative;
+}
+#main .interior>h2 {
+    margin-bottom: 35px;
+    text-align: right;
+}
+#main .tower{
+    background-image: url("../assets/img/eiffelTower.jpg")
+}
+#main .interior>img {
+    height: 410px;
+}
+.underLetterTextWrapper{
+    height: 295.87px;
+    overflow: hidden;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.backgroundLetterA~.underLetterTextWrapper{
+    height: 213.92px;
+}
+
+#main .interior .text{
+line-height: 36px;
+}
+
+.backgroundLetterI {
+    width: 97px;
+    height: 196px;
+    background-image: url("../assets/img/background/I.png");
+    position: absolute;
+    top: 134px;
+    right: 0px;
+}
+#main .interior .wrapperForImg>.biggerPicture{
+    height: 100%;
+    width: 136%;
+}
+#main .mrn-tp-28px{
+    margin-top: 28px;
+    margin-left: -10px;
+}
+#main .cottageImg{
+    background-image: url("../assets/img/cottage.jpg");
+}
+.backgroundLetterLUkr {
+    width: 219px;
+    height: 199px;
+    background-image: url("../assets/img/background/Lukr.png");
+    position: absolute;
+    z-index: 1;
+    left: -5.33vw;
+    top: 33px;
+}
+#main .backgroundLetterLUkr~.underLetterTextWrapper{
+    padding: 12px 20px;
+    line-height: 36px;
+}
+.landskape{
+    margin-top: 34px;
+}
+.landscapeImg{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+@media screen and (max-width: 1081px) {
+    #main .backgroundImagePicture {
+        display: none;
+    }
+    #main .backgroundLetterA {
+    top: -240px;
+    left: 25%;
+    }
+    #main .backgroundLetterLUkr{
+    top: -195px;
+    left: 25%;
+    z-index: 0;
+    }
+    #main .interior .backgroundLetterI {
+    top: -75px;
+    right: 387px;
+    }
+    #main .underline1  {
+    margin-bottom: 42px;
+    }
+    #main .interior .wrapperForImg>.biggerPicture{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #main .backgroundLetterA {
+        top: -240px;
+        left: 25%;
+    }
+    #main .backgroundLetterLUkr{
+        top: -195px;
+        left: 25%;
+        z-index: 0;
+    }
+    #main .interior .backgroundLetterI {
+        top: -85px;
+        right: 176px;
+    }
+    #main .underline1  {
+        margin-bottom: 42px;
+    }
+   #main .interior .wrapperForImg{
+        margin-top: 35px;
+    }
+    #main .wrapForSmallImg{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main .wrapper{
+        padding-top: 130px;
+    }
+    #main .backgroundImagePicture {
+        display: block;
+        left: 0vw;
+        top: -60px;
+    }
+    #main .archTitle {
+        letter-spacing: 2pt;
+        font-size: 36px;
+    }
+    #main .wrapperForImg{
+        margin-bottom: -50px;
+    }
+    #main .backgroundLetterA~.wrapperForImg{
+        margin-right: 15px;
+    }
+    #main .paddingRight {
+        background-size: 100% 100%;
+    }
+    #main .interior .underlineWrapper {
+        height: 37px;
+        padding: 0 15px 0 36px;
+    }
+    #main .biggerPicture{
+        margin-top: -67px;
+        width: 140%;
+        object-fit: cover;
+    }
+    #main .greyBlock h4 {
+        font-size: 24px;
+        letter-spacing: 2pt;
+        margin-bottom: 0px;
+    }
+    #main .greyBlock div {
+        font-size: 24px;
+    }
+    #boxForText{
+        height:340px;
+    }
+    #main .architecture {
+        margin-top: 95px;
+    }
+    #main .firstText,  #main .text, #main .boxForText>p{
+        font-size: 19px;
+        letter-spacing: 0.8px;
+    }
+    #main .small {
+        letter-spacing: 0.8px;
+        bottom: -7px;
+        left: 68px;
+    }
+}
